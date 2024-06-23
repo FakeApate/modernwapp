@@ -1,12 +1,15 @@
 import { ThemeProvider, BaseStyles } from '@primer/react'
 
-import Frame from './Frame'
+import Frame from './layout/frame'
+import Blank from "./pages/Blank";
 
 function App() {
     return (
         <ThemeProvider colorMode='auto' dayScheme='light' nightScheme='dark'>
             <BaseStyles>
-                <Frame />
+                <Frame>
+                    <Blank />
+                </Frame>
             </BaseStyles>
         </ThemeProvider>
     )

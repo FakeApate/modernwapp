@@ -1,6 +1,6 @@
 import { Box } from '@primer/react'
 import { Blankslate } from '@primer/react/experimental'
-import MonaLoadingImage from './images/mona-loading-default.gif'
+import MonaLoadingImage from '../images/mona-loading-default.gif'
 
 export default function Blank() {
     return (
