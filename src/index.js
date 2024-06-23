@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import App from './App'
-import './reset.css'
+import './global.scss'
 
 const rootElement = document.getElementById('root')
 const root = createRoot(rootElement)
