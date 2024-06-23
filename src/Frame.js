@@ -1,4 +1,4 @@
-import { SplitPageLayout, Header as FrameHeader, ActionList, Box, IconButton, useResponsiveValue, Text, Overlay, useOverlay } from "@primer/react"
+import { SplitPageLayout, Header as FrameHeader, ActionList, Box, IconButton, useResponsiveValue, useOverlay } from "@primer/react"
 import { Dialog, } from '@primer/react/experimental'
 import { ThreeBarsIcon } from "@primer/octicons-react"
 import ColorModeSwitcher from './ColorModeSwitcher'
