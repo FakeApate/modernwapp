@@ -1,6 +1,6 @@
 import { Box } from '@primer/react'
 import { Blankslate } from '@primer/react/experimental'
-import MonaLoadingImage from '../images/mona-loading-default.gif'
+import DuckLoadingImage from '../images/pixel_duck_final.gif'
 
 export default function Blank() {
     return (
@@ -20,10 +20,10 @@ export default function Blank() {
                 <Blankslate spacious>
                     <Blankslate.Visual>
                         <img
-                            src={MonaLoadingImage}
-                            alt="mona"
-                            width={48}
-                            height={48}
+                            src={DuckLoadingImage}
+                            alt="duck"
+                            width={64}
+                            height={64}
                         />
                     </Blankslate.Visual>
                     <Blankslate.Heading as='h1'>No content</Blankslate.Heading>

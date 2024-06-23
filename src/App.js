@@ -1,7 +1,7 @@
 import { ThemeProvider, BaseStyles } from '@primer/react'
 
 import Frame from './layout/frame'
-import Blank from "./pages/Blank";
+import Blank from "./pages/blank";
 
 function App() {
     return (
