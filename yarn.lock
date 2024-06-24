@@ -1463,15 +1463,15 @@
   resolved "https://registry.yarnpkg.com/@github/paste-markdown/-/paste-markdown-1.4.3.tgz#7016b973e5a99acc257b8c98aee27f77af1afd72"
   integrity sha512-qUaATGp8uz5PzPC1exxKgBxf7AwoV5ejL1Xlya78tO9gC0++IEqaQbSozR4gdZikY8mB9W1YO+hzac8nIxM/eA==
 
-"@github/relative-time-element@^4.1.2":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@github/relative-time-element/-/relative-time-element-4.3.0.tgz#3cb90ffbbe9a82c7242bdd9d54f2d74d555547cf"
-  integrity sha512-+tFjX9//HRS1HnBa5cNgfEtE52arwiutYg1TOF+Trk40SPxst9Q8Rtc3BKD6aKsvfbtub68vfhipgchGjj9o7g==
+"@github/relative-time-element@^4.4.1":
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/@github/relative-time-element/-/relative-time-element-4.4.2.tgz#7c4bccc7cea8fd8cd82530ae8303ea969d3c86b5"
+  integrity sha512-wTXunu3hmuGljA5CHaaoUIKV0oI35wno0FKJl2yqKplTRnsCA5bPNj4bDeVIubkuskql6jwionWLlGM1Y6QLaw==
 
-"@github/tab-container-element@4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@github/tab-container-element/-/tab-container-element-4.5.0.tgz#c64edac85a442ee95d0f59fbc3404f1c946f087c"
-  integrity sha512-8pzFJVg7AyPFqOjKFoiHwVQbo4MdTPpUfQwW91Hgj+OOvySZVmw4PU8ejU4qTHbb2oA2ajYMRuXuAvhfMgnS1Q==
+"@github/tab-container-element@^4.8.0":
+  version "4.8.2"
+  resolved "https://registry.yarnpkg.com/@github/tab-container-element/-/tab-container-element-4.8.2.tgz#6c28a4be3eac350c64b1f9cb7eef4eb7a7215655"
+  integrity sha512-WkaM4mfs8x7dXRWEaDb5deC0OhH6sGQ5cw8i/sVw25gikl4f8C7mHj0kihL5k3eKIIqmGT1Fdswdoi+9ZLDpRA==
 
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
@@ -1870,16 +1870,16 @@
   resolved "https://registry.yarnpkg.com/@primer/primitives/-/primitives-8.2.3.tgz#e968ccdbfffb5e4f097b857bcf54c244e8eb68c4"
   integrity sha512-K8A/DA6xv8P/kD/9DupFn+KYlo06OpcrwfwJf+sKp+KnX7ZRwLLDg1AaEGAoRoaykXRY/gfrXlgDfK7laOTWyA==
 
-"@primer/react@^36.18.0":
-  version "36.18.0"
-  resolved "https://registry.yarnpkg.com/@primer/react/-/react-36.18.0.tgz#0a639722dfafae0a4f3de653473900460e10a121"
-  integrity sha512-Ce6AGeldnkU0ysRnjcqRx+3O5XqjYwlVY24rkdwZhXfgQkaTDz+gXlLJzWb8nIBrohqb4AAB8zQb4oIlQThq7A==
+"@primer/react@^36.22.0":
+  version "36.22.0"
+  resolved "https://registry.yarnpkg.com/@primer/react/-/react-36.22.0.tgz#4fd96dbb747cf3658bfcfcf2f9463141d6ed935d"
+  integrity sha512-xKDdFNgjw+3e+fI/hXIOBWrWWPHjFds+7leTWZrrITMROZE6GdPFSfjTZzK08Z2Ayqt1ShOFUWi40LMauptYoQ==
   dependencies:
     "@github/combobox-nav" "^2.1.5"
     "@github/markdown-toolbar-element" "^2.1.0"
     "@github/paste-markdown" "^1.4.0"
-    "@github/relative-time-element" "^4.1.2"
-    "@github/tab-container-element" "4.5.0"
+    "@github/relative-time-element" "^4.4.1"
+    "@github/tab-container-element" "^4.8.0"
     "@lit-labs/react" "1.2.1"
     "@oddbird/popover-polyfill" "^0.3.1"
     "@primer/behaviors" "^1.5.1"
