@@ -1,5 +1,5 @@
+'use client';
 import { SplitPageLayout } from "@primer/react"
-
 
 export default function FrameContent({ children }) {
     return (
@@ -7,7 +7,7 @@ export default function FrameContent({ children }) {
             width={"full"}
             padding="condensed"
             sx={{
-                backgroundColor: 'canvas.inset',
+                backgroundColor: 'var(--bgColor-inset)',
                 minHeight: 'calc(100vh - 54px)'
             }}
         >

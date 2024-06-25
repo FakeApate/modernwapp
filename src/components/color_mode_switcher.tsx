@@ -1,11 +1,9 @@
-import { useTheme, ActionMenu, ActionList, Box, theme, useResizeObserver } from '@primer/react'
+import { useTheme, ActionMenu, ActionList, Box, theme } from '@primer/react'
 import { SunIcon, MoonIcon } from '@primer/octicons-react'
-import { useRef, useState } from 'react'
+import { setCookie } from '@/app/actions'
 
 function ColorModeSwitcher() {
     const { setDayScheme, setNightScheme, colorScheme } = useTheme()
-    const btnRef = useRef()
-    const [menuWidth, setMenuWidth] = useState('100%')
 
 
     const setScheme = (schemeValue) => {
@@ -21,21 +19,15 @@ function ColorModeSwitcher() {
         }
     })
 
-    const current = schemes.find((scheme) => scheme.value === colorScheme)
+    const current = schemes.find((scheme) => scheme.value === colorScheme) ?? schemes[0]
 
-    useResizeObserver(() => {
-        const width = btnRef.current?.firstChild?.clientWidth
-        setMenuWidth(width ?? '100%')
-    })
+    
     return (
-        <Box padding="2" ref={btnRef}>
+        <Box padding="2">
             <ActionMenu >
                 <ActionMenu.Button
-                    size="small"
-                    sx={{
-                        width: '100%',
-                        bg: 'canvas.default'
-                    }}>
+                    className='bgColor-default width-full'
+                    size="small">
                     <current.icon />
                     <Box
                         sx={{
@@ -49,16 +41,19 @@ function ColorModeSwitcher() {
                 <ActionMenu.Overlay
                     align='start'
                     sx={{
-                        width: menuWidth
+                        width: '100%'
                     }}>
                     <ActionList showDividers>
                         <ActionList.Group selectionVariant="single">
                             {schemes.map((scheme) => (
                                 <ActionList.Item
                                     key={scheme.value}
-                                    href="#"
                                     selected={scheme.value === colorScheme}
-                                    onSelect={() => setScheme(scheme.value)}
+                                    onSelect={() => {
+                                        setScheme(scheme.value)
+                                        setCookie(scheme.value)
+                                    }
+                                }
                                 >
                                     {scheme.name}
                                 </ActionList.Item>

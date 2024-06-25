@@ -7,8 +7,8 @@ function Frame({ children }) {
     return (
         <SplitPageLayout
             sx={{
-                bg: 'canvas.default',
-                minHeight: 'calc(100vh)'
+                bg: 'var(--bgColor-default)',
+                minHeight: '100vh'
             }}>
             <FrameHeader />
             <FramePane />
