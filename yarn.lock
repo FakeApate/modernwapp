@@ -2026,13 +2026,13 @@
   resolved "https://registry.yarnpkg.com/@primer/behaviors/-/behaviors-1.5.1.tgz#7557482561b1ac33b2cff162bc8be170bea7f58f"
   integrity sha512-ApPbNhiWPHscs0+rLV76sCY75IEpPvDEZq9+iQXQqU6Tv5SLdax3PmzJlUHftlQ7O/eJnLO1dTEMEwj2Yn1BLA==
 
-"@primer/css@^21.3.3":
-  version "21.3.3"
-  resolved "https://registry.yarnpkg.com/@primer/css/-/css-21.3.3.tgz#64321669586d9320751238f69ee190f7c6b2d66d"
-  integrity sha512-mxmDPVRPfYdh9UgR13/Fl6ndMb+0aunZ1crApQEMxdOHZugHcuqxS4eSK+LLb8MJQ4Z3yduJdiXyqMfX9jHuPA==
+"@primer/css@^21.3.4":
+  version "21.3.4"
+  resolved "https://registry.yarnpkg.com/@primer/css/-/css-21.3.4.tgz#c4df5bed951c32cdedbf6c73f5ab9546ce8c0cd4"
+  integrity sha512-MjeMlwnnttbWFSfBiG+j2VKSaQcoCIoTcbYpjAPWChKV4SkY1xxW6/LeJTE8cyqcL7ujdE8IF0B7m0W+BpCN2w==
   dependencies:
     "@primer/primitives" "^8.2.0"
-    "@primer/view-components" "^0.25.1"
+    "@primer/view-components" "^0.26.1"
 
 "@primer/live-region-element@^0.6.1":
   version "0.6.1"
@@ -2092,10 +2092,10 @@
     react-markdown "8.0.7"
     styled-system "^5.1.5"
 
-"@primer/view-components@^0.25.1":
-  version "0.25.1"
-  resolved "https://registry.yarnpkg.com/@primer/view-components/-/view-components-0.25.1.tgz#cae6baef412698f77f94d4e5c87204805404190d"
-  integrity sha512-4lORMPZMyOsQFo3K61sfGEo0yfsfvUKvJEY+YNc8DBcoJZUG/guKC0XE+eAsAsF2f4p5Xa3kjWQj3+MtdrzxOQ==
+"@primer/view-components@^0.26.1":
+  version "0.26.1"
+  resolved "https://registry.yarnpkg.com/@primer/view-components/-/view-components-0.26.1.tgz#026bf44f45dfebcaa4e3f4fb89ef8a12564f6584"
+  integrity sha512-ARoUfrqDAlvDMeGBiQyk+mhV8S1NSnyMgMkHs6os8Sf9JeBWjBywSIzalNsuu+FMyPCrAzanxHknxEuEq9HYFQ==
   dependencies:
     "@github/auto-check-element" "^5.2.0"
     "@github/auto-complete-element" "^3.6.2"
