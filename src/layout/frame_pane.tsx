@@ -1,7 +1,7 @@
 'use client';
-import styled, { } from 'styled-components'
-import { SplitPageLayout, Box, PageLayout, useResponsiveValue } from "@primer/react"
-import Navigation from "../components/navigation"
+
+import { SplitPageLayout, Box } from "@primer/react"
+import Navigation from "@/components/navigation"
 
 export default function FramePane() {
     return (

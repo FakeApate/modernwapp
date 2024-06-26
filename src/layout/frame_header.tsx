@@ -1,6 +1,6 @@
 'use client';
 import { SplitPageLayout, Header, Text } from "@primer/react"
-import MobileNavigation from "../components/mobile_navigation";
+import MobileNavigation from "@/components/mobile_navigation";
 
 export default function FrameHeader() {
     return (

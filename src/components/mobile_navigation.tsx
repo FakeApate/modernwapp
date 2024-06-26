@@ -4,7 +4,7 @@ import { IconButton, useResponsiveValue, useOverlay } from "@primer/react"
 import { Dialog, } from '@primer/react/experimental'
 import { ThreeBarsIcon } from "@primer/octicons-react"
 import { useRef, useState } from "react";
-import Navigation from "./navigation";
+import Navigation from "@/components/navigation";
 import { Property } from 'csstype'
 
 export default function MobileNavigation() {

@@ -1,12 +1,14 @@
+
 import { useTheme, ActionMenu, ActionList, Box, theme } from '@primer/react'
 import { SunIcon, MoonIcon } from '@primer/octicons-react'
 import { setCookie } from '@/app/actions'
+import classes from './color_mode_switcher.module.scss'
 
 function ColorModeSwitcher() {
     const { setDayScheme, setNightScheme, colorScheme } = useTheme()
 
 
-    const setScheme = (schemeValue) => {
+    const setScheme = (schemeValue: string) => {
         setDayScheme(schemeValue)
         setNightScheme(schemeValue)
     }
@@ -29,20 +31,12 @@ function ColorModeSwitcher() {
                     className='bgColor-default width-full'
                     size="small">
                     <current.icon />
-                    <Box
-                        sx={{
-                            display: 'inline-block',
-                            ml: 2
-                        }}>
+                    <Box className={classes.color_selector_name}>
                         {' '}
                         {current.name}
                     </Box>
                 </ActionMenu.Button>
-                <ActionMenu.Overlay
-                    align='start'
-                    sx={{
-                        width: '100%'
-                    }}>
+                <ActionMenu.Overlay align='start'>
                     <ActionList showDividers>
                         <ActionList.Group selectionVariant="single">
                             {schemes.map((scheme) => (

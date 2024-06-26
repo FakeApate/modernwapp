@@ -1,9 +1,13 @@
 import { SplitPageLayout } from "@primer/react"
-import FrameContent from "./frame_content"
-import FrameHeader from "./frame_header"
-import FramePane from "./frame_pane"
+import FrameContent from "@/layout/frame_content"
+import FrameHeader from "@/layout/frame_header"
+import FramePane from "@/layout/frame_pane"
 
-function Frame({ children }) {
+function Frame({
+    children,
+}: {
+    children: React.ReactNode
+}) {
     return (
         <SplitPageLayout
             sx={{

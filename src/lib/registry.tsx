@@ -22,8 +22,12 @@ export default function StyledComponentsRegistry({
   if (typeof window !== 'undefined') return <>{children}</>
  
   return (
+    <>
+    {/* @ts-ignore */ }
     <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
+      {/* @ts-ignore */ }
       {children}
     </StyleSheetManager>
+    </>
   )
 }

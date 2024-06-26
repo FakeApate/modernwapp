@@ -20,7 +20,7 @@ export default function RootLayout({
     var mode: ColorModeWithAuto = 'dark'
     var light_theme = 'light'
     var dark_theme = 'dark'
-    if (theme.includes('light')){
+    if (theme.includes('light')) {
         mode = 'light'
         light_theme = theme
     }
@@ -33,6 +33,7 @@ export default function RootLayout({
             <body data-color-mode={mode} data-light-theme={light_theme} data-dark-theme={dark_theme}>
                 <StyledComponentsRegistry>
                     <ThemeProvider colorMode={mode} dayScheme={light_theme} nightScheme={dark_theme}>
+                    {/* @ts-ignore */ }
                         <BaseStyles>
                             <Frame>
                                 {children}

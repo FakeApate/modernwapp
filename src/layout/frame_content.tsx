@@ -1,7 +1,11 @@
 'use client';
 import { SplitPageLayout } from "@primer/react"
 
-export default function FrameContent({ children }) {
+export default function FrameContent({
+    children,
+}: {
+    children: React.ReactNode
+}) {
     return (
         <SplitPageLayout.Content
             width={"full"}

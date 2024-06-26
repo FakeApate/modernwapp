@@ -5,8 +5,12 @@ const nextConfig = {
     compiler: {
         styledComponents: true,
     },
-    sassOptions: {
-       
+    output: "standalone",
+    distDir: "build",
+    experimental: {
+        serverActions:{
+            allowedOrigins: ["localhost:3000"]
+        }
     }
 };
 

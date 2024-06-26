@@ -1,7 +1,7 @@
 'use client';
 
 import { ActionList, Box } from "@primer/react"
-import ColorModeSwitcher from './color_mode_switcher'
+import ColorModeSwitcher from '@/components/color_mode_switcher'
 import { usePathname } from 'next/navigation'
 
 export default function Navigation() {
