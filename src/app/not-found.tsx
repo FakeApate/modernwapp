@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 export default function Blank() {
     return (
@@ -12,9 +11,7 @@ export default function Blank() {
                     height={64}
                 />
                 <h1>No content</h1>
-                <p>
-                    There is currently no content to display
-                </p>
+                <p>There is currently no content to display</p>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
-'use client';
+'use client'
 
-import { useRef, useState } from "react";
-import Navigation from "@/components/navigation";
+import { useRef, useState } from 'react'
+import Navigation from '@/components/navigation'
 
 export default function MobileNavigation() {
     const [isOpen, setIsOpen] = useState(false)
@@ -9,32 +9,32 @@ export default function MobileNavigation() {
     const btnRef = useRef<HTMLButtonElement>(null)
 
     return (
-        <>
-            <button ref={btnRef} id="sidemenu_btn" className="" onClick={() => {
-                setIsOpen(!isOpen)
-            }}>
-                {/*<ThreeBarsIcon />*/}
+        <div>
+            <button
+                ref={btnRef}
+                id="sidemenu_btn"
+                onClick={() => setIsOpen(!isOpen)}
+            >
+                {'<ThreeBarsIcon />'}
             </button>
-            <dialog id="sidemenu_dialog" ref={dialogRef} open={isOpen}
-                className="">
-                <div className="">
-                    <div className="">
-                        <div className="">
-                            <div className="">
-                                Pages
-                            </div>
+            <dialog id="sidemenu_dialog" ref={dialogRef} open={isOpen}>
+                <div>
+                    <div>
+                        <div>
+                            <div>Pages</div>
                         </div>
-                        <button id="sidemenu_close_btn" className="" onClick={() => {
-                            setIsOpen(false)
-                        }}>
-                           {/*  <XIcon />*/}
+                        <button
+                            id="sidemenu_close_btn"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            {'<XIcon />'}
                         </button>
                     </div>
                 </div>
-                <div className="">
+                <div>
                     <Navigation />
                 </div>
             </dialog>
-        </>
+        </div>
     )
 }
