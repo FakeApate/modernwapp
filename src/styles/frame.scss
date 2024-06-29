@@ -1,0 +1,27 @@
+#frame {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "pane main";
+  grid-template-columns: var(--Layout-pane-width) 1fr;
+  grid-template-rows: 64px calc(100vh - 64px);
+  gap: 0px;
+  background-color: var(--bgColor-inset);
+}
+
+#frame > aside {
+  grid-area: pane;
+  background-color: var(--bgColor-default);
+  border-right: 1px solid var(--borderColor-muted, var(--color-border-muted));
+}
+
+#frame > main {
+  grid-area: main;
+  background-color: var(--bgColor-inset);
+}
+
+#frame > header {
+  grid-area: header;
+  background-color: var(--bgColor-inset);
+  border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
+}

@@ -1,9 +1,9 @@
-'use client'
+"use client";
 
 export default function FrameContent({
-    children,
+  children,
 }: {
-    children: React.ReactNode
+  children: React.ReactNode;
 }) {
-    return <section className="">{children}</section>
+  return <main>{children}</main>;
 }

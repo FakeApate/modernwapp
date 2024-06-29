@@ -1,0 +1,18 @@
+@import "@primer/primitives/dist/css/base/size/size.css";
+@import "@primer/primitives/dist/css/base/typography/typography.css";
+@import "@primer/primitives/dist/css/functional/size/border.css";
+@import "@primer/primitives/dist/css/functional/size/breakpoints.css";
+@import "@primer/primitives/dist/css/functional/size/size.css";
+@import "@primer/primitives/dist/css/functional/size/viewport.css";
+@import "@primer/primitives/dist/css/functional/typography/typography.css";
+@import "@primer/primitives/dist/css/functional/themes/light.css";
+@import "@primer/primitives/dist/css/functional/themes/dark.css";
+
+@import "@primer/css/core/index.scss";
+@import "@primer/css/header/index.scss";
+
+@import "./frame.scss";
+
+body {
+  background-color: var(--bgColor-inset);
+}
