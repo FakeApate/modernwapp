@@ -1,5 +1,4 @@
 'use client';
-import { SplitPageLayout } from "@primer/react"
 
 export default function FrameContent({
     children,
@@ -7,15 +6,8 @@ export default function FrameContent({
     children: React.ReactNode
 }) {
     return (
-        <SplitPageLayout.Content
-            width={"full"}
-            padding="condensed"
-            sx={{
-                backgroundColor: 'var(--bgColor-inset)',
-                minHeight: 'calc(100vh - 54px)'
-            }}
-        >
+        <section className="">
             {children}
-        </SplitPageLayout.Content>
+        </section>
     );
 }

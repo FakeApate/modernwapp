@@ -1,33 +1,22 @@
 'use client';
 
-import { ActionList, Box } from "@primer/react"
-import ColorModeSwitcher from '@/components/color_mode_switcher'
 import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 
 export default function Navigation() {
     const pathname = usePathname();
     return (
-        <Box
-            sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                height: '100%',
-            }}>
-            <ActionList
-                sx={{
-                    flexGrow: '1'
-                }}>
-                <ActionList.LinkItem href="/" active={pathname === '/'}>
-                    Dashboard
-                </ActionList.LinkItem>
-                <ActionList.LinkItem href="/page1" active={pathname === '/page1'}>
-                    Page 1
-                </ActionList.LinkItem>
-                <ActionList.LinkItem href="/page2" active={pathname === '/page2'}>
-                    Page 2
-                </ActionList.LinkItem>
-            </ActionList>
-            <ColorModeSwitcher />
-        </Box>
+        <nav className="">
+            <Link className="" href="/" aria-current={pathname === '/'}>
+                Dashboard
+            </Link>
+            <Link className="" href="/page1" aria-current={pathname === '/page1'}>
+                Page 1
+            </Link>
+            <Link className="" href="/page2" aria-current={pathname === '/page2'}>
+                Page 2
+            </Link>
+        </nav>
+
     )
 }
