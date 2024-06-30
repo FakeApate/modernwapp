@@ -12,16 +12,31 @@
 #frame > aside {
   grid-area: pane;
   background-color: var(--bgColor-default);
-  border-right: 1px solid var(--borderColor-muted, var(--color-border-muted));
+  border-right: 1px solid var(--borderColor-default);
+}
+
+[data-color-mode="dark"][data-dark-theme="dark"],
+[data-color-mode="dark"][data-dark-theme="dark"] ::backdrop,
+[data-color-mode="auto"][data-light-theme="dark"],
+[data-color-mode="auto"][data-light-theme="dark"] ::backdrop {
+  --frame-main-bgColor: var(--bgColor-inset);
+}
+
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="light"][data-light-theme="light"] ::backdrop,
+[data-color-mode="auto"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] ::backdrop {
+  --frame-main-bgColor: var(--bgColor-default);
+  --header-fgColor-default: var(--fgColor-default);
 }
 
 #frame > main {
   grid-area: main;
-  background-color: var(--bgColor-inset);
+  background-color: var(--frame-main-bgColor);
 }
 
 #frame > header {
   grid-area: header;
   background-color: var(--bgColor-inset);
-  border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));
+  border-bottom: 1px solid var(--borderColor-default);
 }
