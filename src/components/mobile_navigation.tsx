@@ -3,7 +3,9 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import Navigation from "@/components/navigation";
 import XIcon from "@primer/octicons/build/svg/x-24.svg";
-import ThreeBarsIconUrl from "@primer/octicons/build/svg/three-bars-24.svg";
+import ThreeBarsIcon from "@primer/octicons/build/svg/three-bars-24.svg";
+import ColorModeSwitcher from "./color_mode_switcher";
+import FramePane from "@/layout/frame_pane";
 export default function MobileNavigation() {
   const [isOpen, setIsOpen] = useState(false);
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -17,7 +19,7 @@ export default function MobileNavigation() {
         className="btn-octicon"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <ThreeBarsIconUrl className="octicon" alt="toggle menu" />
+        <ThreeBarsIcon className="octicon" alt="toggle menu" />
       </button>
       <dialog id="sidemenu_dialog" ref={dialogRef} open={isOpen}>
         <div>
@@ -34,9 +36,7 @@ export default function MobileNavigation() {
             </button>
           </div>
         </div>
-        <div>
-          <Navigation />
-        </div>
+        <FramePane />
       </dialog>
     </div>
   );

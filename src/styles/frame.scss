@@ -13,6 +13,9 @@
   grid-area: pane;
   background-color: var(--bgColor-default);
   border-right: 1px solid var(--borderColor-default);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--base-size-8);
 }
 
 [data-color-mode="dark"][data-dark-theme="dark"],
@@ -39,4 +42,17 @@
   grid-area: header;
   background-color: var(--bgColor-inset);
   border-bottom: 1px solid var(--borderColor-default);
+}
+
+@media (max-width: 767px) {
+  #frame {
+    grid-template-areas:
+      "header"
+      "main";
+    grid-template-columns: 1fr;
+  }
+
+  #frame > aside {
+    display: none;
+  }
 }
