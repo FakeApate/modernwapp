@@ -3,7 +3,7 @@ import Frame from "@/layout/frame";
 import { Metadata } from "next";
 import { cookies } from "next/headers";
 import { ThemeProvider } from "@/lib/ThemeProvider";
-
+import W3Frame from "@/layout/w3_frame";
 export const metadata: Metadata = {
   title: "Modern Web App",
   description: "A project to build a modern web app",
@@ -26,10 +26,8 @@ export default function RootLayout({
       data-js-focus-visible=""
       data-color-mode={theme}
     >
-      <body className="bg-inset dark:bg-inset-dark">
-        <ThemeProvider theme={theme}>
-          <Frame>{children}</Frame>
-        </ThemeProvider>
+      <body className="w3-light-grey">
+        <W3Frame>{children}</W3Frame>
       </body>
     </html>
   );
