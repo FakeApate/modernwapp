@@ -18,17 +18,11 @@
   padding-bottom: var(--base-size-8);
 }
 
-[data-color-mode="dark"][data-dark-theme="dark"],
-[data-color-mode="dark"][data-dark-theme="dark"] ::backdrop,
-[data-color-mode="auto"][data-light-theme="dark"],
-[data-color-mode="auto"][data-light-theme="dark"] ::backdrop {
+@include color-mode(dark) {
   --frame-main-bgColor: var(--bgColor-inset);
 }
 
-[data-color-mode="light"][data-light-theme="light"],
-[data-color-mode="light"][data-light-theme="light"] ::backdrop,
-[data-color-mode="auto"][data-light-theme="light"],
-[data-color-mode="auto"][data-light-theme="light"] ::backdrop {
+@include color-mode(light) {
   --frame-main-bgColor: var(--bgColor-default);
   --header-fgColor-default: var(--fgColor-default);
 }

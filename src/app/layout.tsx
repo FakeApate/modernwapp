@@ -1,8 +1,9 @@
+import "@/styles/globals.scss";
 import Frame from "@/layout/frame";
 import { Metadata } from "next";
 import { cookies } from "next/headers";
-import "@/styles/global.scss";
 import { ThemeProvider } from "@/lib/ThemeProvider";
+
 export const metadata: Metadata = {
   title: "Modern Web App",
   description: "A project to build a modern web app",
@@ -20,8 +21,12 @@ export default function RootLayout({
   var theme = themeC === "light" ? "light" : "dark";
 
   return (
-    <html className="js-focus-visible" data-js-focus-visible="">
-      <body>
+    <html
+      className={"js-focus-visible"}
+      data-js-focus-visible=""
+      data-color-mode={theme}
+    >
+      <body className="bg-inset dark:bg-inset-dark">
         <ThemeProvider theme={theme}>
           <Frame>{children}</Frame>
         </ThemeProvider>

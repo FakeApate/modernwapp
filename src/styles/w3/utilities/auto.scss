@@ -1,0 +1,19 @@
+.w3-auto {
+  max-width: 1140px;
+}
+.w3-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 992px) {
+  .w3-auto {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1205px) {
+  .w3-auto {
+    max-width: 95%;
+  }
+}

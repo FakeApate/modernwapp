@@ -16,10 +16,10 @@ export default function MobileNavigation() {
       <button
         ref={btnRef}
         id="sidemenu_btn"
-        className="btn-octicon"
+        className=""
         onClick={() => setIsOpen(!isOpen)}
       >
-        <ThreeBarsIcon className="octicon" alt="toggle menu" />
+        <ThreeBarsIcon className="" alt="toggle menu" />
       </button>
       <dialog id="sidemenu_dialog" ref={dialogRef} open={isOpen}>
         <div>
@@ -29,10 +29,10 @@ export default function MobileNavigation() {
             </div>
             <button
               id="sidemenu_close_btn"
-              className="btn-octicon"
+              className=""
               onClick={() => setIsOpen(false)}
             >
-              <XIcon className="octicon" alt="close" />
+              <XIcon className="" alt="close" />
             </button>
           </div>
         </div>

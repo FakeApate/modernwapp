@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useState, Dispatch, SetStateAction } from "react";
+import { createContext, useState } from "react";
 
 export const ThemeContext = createContext({
   theme: "dark",
@@ -22,13 +22,7 @@ export function ThemeProvider({
   };
   return (
     <ThemeContext.Provider value={{ theme: themeState, setTheme: setTheme }}>
-      <div
-        data-color-mode={themeState}
-        data-dark-theme="dark"
-        data-light-theme="light"
-      >
-        {children}
-      </div>
+      {children}
     </ThemeContext.Provider>
   );
 }

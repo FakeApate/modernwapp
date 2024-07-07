@@ -1,32 +1,33 @@
 {
-  "name": "material-ui-nextjs-ts",
-  "version": "5.0.0",
+  "name": "tmp_app",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
+    "dev": "$npm_execpath run prepare:styles && next dev",
     "build": "next build",
+    "build:styles": "$npm_execpath run prepare:styles && tsx scripts/build/styles.ts",
+    "prepare:styles": "tsx scripts/prepare/styles.ts",
     "start": "next start",
-    "lint": "next lint",
-    "post-update": "echo \"codesandbox preview only, need an update\" && pnpm update --latest"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@primer/css": "^21.3.4",
     "@primer/octicons": "^19.10.0",
-    "@primer/primitives": "^8.2.3",
     "next": "14.2.4",
-    "normalize.css": "^8.0.1",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
-    "@types/node": "^20",
+    "@types/node": "^20.14.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "normalize.css": "^8.0.1",
+    "postcss": "^8",
     "sass": "^1.77.6",
+    "tsx": "^4.16.2",
     "typescript": "^5"
   }
 }

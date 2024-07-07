@@ -1,0 +1,12 @@
+.w3-sepia {
+  filter: sepia(75%);
+}
+
+.w3-sepia-max,
+.w3-hover-sepia:hover {
+  filter: sepia(100%);
+}
+
+.w3-sepia-min {
+  filter: sepia(50%);
+}

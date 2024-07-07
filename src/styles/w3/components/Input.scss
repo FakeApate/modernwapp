@@ -1,0 +1,15 @@
+.w3-input {
+  padding: 8px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.w3-animate-input {
+  transition: width 0.4s ease-in-out;
+}
+
+.w3-animate-input:focus {
+  width: 100% !important;
+}

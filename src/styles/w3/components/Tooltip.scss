@@ -1,0 +1,11 @@
+.w3-tooltip {
+  position: relative;
+}
+
+.w3-tooltip .w3-text {
+  display: none;
+}
+
+.w3-tooltip:hover .w3-text {
+  display: inline-block;
+}

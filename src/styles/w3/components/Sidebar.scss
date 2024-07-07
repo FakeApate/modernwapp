@@ -1,0 +1,20 @@
+.w3-sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  position: fixed !important;
+  z-index: 1;
+  overflow: auto;
+}
+
+@media (max-width: 992px) {
+  .w3-sidebar.w3-collapse {
+    display: none;
+  }
+}
+
+@media (min-width: 993px) {
+  .w3-sidebar.w3-collapse {
+    display: block !important;
+  }
+}

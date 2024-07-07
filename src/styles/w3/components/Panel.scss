@@ -1,0 +1,15 @@
+.w3-panel {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.w3-panel {
+  padding: 0.01em 16px;
+}
+
+.w3-panel:after,
+.w3-panel:before {
+  content: "";
+  display: table;
+  clear: both;
+}

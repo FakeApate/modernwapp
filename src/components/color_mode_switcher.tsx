@@ -20,26 +20,26 @@ function ColorModeSwitcher() {
 
   return (
     <div className={classses.cbtn}>
-      <div className="BtnGroup">
+      <div className="">
         <button
-          className="btn BtnGroup-item"
+          className=""
           onClick={setToLight}
           aria-label="toggle"
           disabled={theme === "light"}
         >
           <div>
-            <SunIcon className="octicon" />
+            <SunIcon className="" />
             <i>Light</i>
           </div>
         </button>
         <button
-          className="btn BtnGroup-item"
+          className=""
           onClick={setToDark}
           aria-label="toggle"
           disabled={theme === "dark"}
         >
           <div>
-            <MoonIcon className="octicon" />
+            <MoonIcon className="" />
             <i>Dark</i>
           </div>
         </button>
